@@ -1,7 +1,7 @@
 package com.example.assosiationservice.entities;
 
 import com.example.assosiationservice.model.Customer;
-import com.example.assosiationservice.model1.BankAccount;
+import com.example.assosiationservice.model.BankAccount;
 import jakarta.persistence.*;
 import lombok.*;
 

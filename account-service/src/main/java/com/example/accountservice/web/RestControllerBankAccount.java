@@ -2,11 +2,10 @@ package com.example.accountservice.web;
 
 import com.example.accountservice.entities.BankAccount;
 import com.example.accountservice.repository.RepoBankAccount;
-import com.example.customerservice.entities.Customer;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.openfeign.FeignClient;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -30,7 +29,7 @@ public class RestControllerBankAccount {
 
 
     }
-    @GetMapping("/bankAccount{id}")
+    @GetMapping("/bankAccount/{id}")
     public BankAccount bankAccountById (@PathVariable("id") String id){
  return  repoBankAccount.findById(id).get();
 

@@ -1,6 +1,5 @@
 package com.example.accountservice.entities;
 
-import com.example.customerservice.entities.Customer;
 import jakarta.persistence.*;
 import lombok.*;
 

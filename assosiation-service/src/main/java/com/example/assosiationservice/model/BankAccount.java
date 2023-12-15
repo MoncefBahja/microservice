@@ -1,8 +1,9 @@
-package com.example.assosiationservice.model1;
+package com.example.assosiationservice.model;
 
 import lombok.*;
 
 import java.time.LocalDate;
+
 
 @Getter
 @Setter

@@ -21,7 +21,7 @@ public class AssosiationServiceApplication {
     CommandLineRunner commandLineRunner (RepoAssosiation repoAssosiation){
         return args -> {
             Assosiation assosiation = Assosiation.builder()
-                    .idAccount("bdc977ff-4f47-4e1e-971d-f06ffc394ffe")
+                    .idAccount("A")
                     .idCustomer(2L)
                     .build() ;
                   repoAssosiation.save(assosiation) ;

@@ -1,12 +1,10 @@
 package com.example.accountservice;
 
-import com.example.accountservice.entities.AccountType;
 import com.example.accountservice.entities.BankAccount;
 import com.example.accountservice.repository.RepoBankAccount;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.Bean;
 
 import java.time.LocalDate;
@@ -20,7 +18,7 @@ public class AccountServiceApplication {
     CommandLineRunner commandLineRunner (RepoBankAccount repoBankAccount){
         return args->{
             BankAccount bankAccount1 = BankAccount.builder()
-                    .accountId(UUID.randomUUID().toString())
+                    .accountId("A")
                     .balance(12000)
                     .currency("DH")
                     .createAt(LocalDate.now())
@@ -28,7 +26,7 @@ public class AccountServiceApplication {
 
    repoBankAccount.save(bankAccount1) ;
             BankAccount bankAccount2 = BankAccount.builder()
-                    .accountId(UUID.randomUUID().toString())
+                    .accountId("B")
                     .balance(20000)
                     .currency("DH")
                     .createAt(LocalDate.now())
