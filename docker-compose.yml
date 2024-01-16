@@ -96,3 +96,5 @@ services:
         assosiation:
           condition: service_healthy
 
+
+
